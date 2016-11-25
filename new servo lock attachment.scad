@@ -8,15 +8,15 @@ translate([0,0,20]) union(){
 }
 module corner(){
     
-    intersection(){
-        cube([4,4,20]);
+   intersection(){
+        cube([4,2,20]);
         cylinder(20,2,2);
     }
 }
-union(){
-    cube([7,5,20]);
-    translate([2,5,0]) cube([3,2,20]);
-    translate([5,5,0]) corner();
-    translate([2,5,0]) rotate([0,0,90]) corner();
+translate([0.85,0.85,0]) union(){
+    cube([5.3,3.30,20]);
+    translate([2,3.30,0]) cube([1.3,2,20]);
+    translate([3.3,3.30,0]) corner();
+    translate([2,3.30,0]) rotate([0,0,90]) corner();
 
 }
